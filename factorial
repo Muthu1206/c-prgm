@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+ long factorial(int n) 
+{
+    long result = 1;
+    for (int i = 1; i <= n; ++i) 
+    {
+        result *= i;
+    }
+    return result;
+}
+
+int main()
+{
+    int num;
+    long result;
+
+
+    printf("Enter a integer: ");
+    scanf("%d", &num);
+
+    
+    if (num < 0) 
+    {
+        printf("Factorial integers.\n");
+        return 1; 
+    }
+
+    
+    result = factorial(num);
+
+    
+    printf("The factorial of %d is: %llu\n", num, result);
+
+    return 0; 
+}
